@@ -1,6 +1,29 @@
 {
-	"scripts": {
-		"test" : "node_modules\\.bin\\jasmine-node spec --verbose",
-		"watch" : "node_modules\\.bin\\jasmine-node spec --verbose --autotest --watch ."
-	}
+  "name": "life-on-mars",
+  "version": "1.0.0",
+  "description": "Ground control commands to Major Tom the Robot",
+  "main": "main.js",
+  "scripts": {
+    "test": "node_modules\\\\.bin\\\\jasmine-node spec --verbose",
+    "watch": "node_modules\\.bin\\jasmine-node spec --verbose --autotest --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virividivici/Life-On-Mars.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Robots",
+    "Mars"
+  ],
+  "author": "Zoe Azhdari",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/danbadge/martian-robots#readme",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "webpack": "^1.13.0"
+  }
 }

@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Life on Mars</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row" id="content">
+
+
+        <div class="col-md-5">
+            <textarea id="instructions" type="text" autofocus="autofocus" rows="10" class="form-control" placeholder="Enter grid size and robot instructions here"></textarea>
+        </div>
+
+        <div class="col-md-2" id='control'>
+          <div class="row">
+            <button id="go" type="submit" class='btn btn-danger'>Go Robot</button>
+            <button id="clear" class='btn btn-default btn-large'>Clear</button>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <textarea type="text" id="output" readonly="readonly" rows="10" class="form-control" placeholder="Output goes here"></textarea>
+        </div>
+    </div>
+
+    
+  <div>
+  <script src="build/main.js"></script>
+</body>
+</html>
