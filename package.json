@@ -21,7 +21,7 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "https://github.com/danbadge/martian-robots#readme",
+  "homepage": "www.zoe-azhdari.com/life-on-mars",
   "devDependencies": {
     "jasmine-node": "^1.14.5",
     "webpack": "^1.13.0"
