@@ -6,10 +6,10 @@ describe("Given a new Mars", function () {
 		expect(mars.width).toBe(41);
 		expect(mars.height).toBe(11);
 	});
-	/**it("with a height of 51 then throw an error", function () {
-		expect(function () { new Mars([2, 51])}).toThrow(new Error("Grid size cannot be greater than 50x50"));
+	it("position 45x8 is not on the grid", function () {
+		expect( mars.isInside({ x:45, y: 8})).toBeFalsy();
 	});
-	it("with a width of 51 then throw an error", function () {
+	/**it("with a width of 51 then throw an error", function () {
 		expect(function () { new Mars([51, 1])}).toThrow(new Error("Grid size cannot be greater than 50x50"));
 	});
 	it("with a negative height then throw an error", function () {
