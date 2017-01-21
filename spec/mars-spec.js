@@ -1,11 +1,21 @@
-var Mars = require("../mars.js");
+var Mars = require("../js/mars.js");
 
-describe("Given I send some instructions to Mars", function () {
-	it("then I get information on the whereabouts of my Robots", function () {
-		var mars = new Mars();
-		var instructions = "5 3\n1 1 E\nRFRFRFRF\n\n3 2 N\nFRRFLLFFRRFLL\n\n0 3 W\nLLFFFLFLFL";
-		var result = mars.send(instructions);
-
-		expect(result).toEqual("1 1 E\n3 3 N LOST\n2 3 S");
+describe("Given a new Mars", function () {
+	var mars = new Mars([40, 10])
+	it("with a height of 40 and width of 10 then", function () {
+		expect(mars.width).toBe(41);
+		expect(mars.height).toBe(11);
 	});
+	/**it("with a height of 51 then throw an error", function () {
+		expect(function () { new Mars([2, 51])}).toThrow(new Error("Grid size cannot be greater than 50x50"));
+	});
+	it("with a width of 51 then throw an error", function () {
+		expect(function () { new Mars([51, 1])}).toThrow(new Error("Grid size cannot be greater than 50x50"));
+	});
+	it("with a negative height then throw an error", function () {
+		expect(function () { new Mars([45, -1])}).toThrow(new Error("Grid size cannot be smaller than 1x1"));
+	});
+	it("with a negative width then throw an error", function () {
+		expect(function () { new Mars([-1, 30])}).toThrow(new Error("Grid size cannot be smaller than 1x1"));
+	});	**/	
 });

@@ -1,4 +1,4 @@
-var Position = require("../position.js");
+/**var Position = require("../position.js");
 var Grid = require("../grid.js");
 
 describe("Given a Grid of 2x2 and a position", function () {
@@ -85,4 +85,4 @@ describe("Given a Grid of 2x2 and a position", function () {
 		position.isOffThe(grid);
 		expect(position.x).toBe(0);
 	});	
-});
+});**/

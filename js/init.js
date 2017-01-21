@@ -1,7 +1,7 @@
-var global = require("./js/global.js");
-var Command = require("./js/command.js");
-var Mars = require("./js/mars.js");
-var Robot = require("./js/robot.js");
+var global = require("./global.js");
+var Command = require("./command.js");
+var Mars = require("./mars.js");
+var Robot = require("./robot.js");
 // define global object to save current planet and output
 //var global = {};
 
@@ -22,7 +22,6 @@ function initiate () {
   goClick.onclick = function run(){
     var input = document.getElementById("instructions").value;
     var command = new Command(input);
-
     if (!command.userInput) {
       alert("This input is invalid! Did you enter it in the correct format?");
     } else {
@@ -33,10 +32,9 @@ function initiate () {
 
       // only lay out grid and process robot instructions if input is correct
       else {
-
         // lay out current grid
         global.mars = new Mars (command.gridCoordinates);
-
+        console.log(global.mars.cells.toString());
         // process all user instructions
         startRobots(command.roboInstructions);
 

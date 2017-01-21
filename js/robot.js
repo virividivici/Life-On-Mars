@@ -19,8 +19,8 @@ Robot.prototype.move = function () {
     for (var i = 0; i < this.instruction.length; i++) {
 
       // take into account yet defined instruction - add more instructions here
-      if (this.instruction.charAt(i) === 'L') {this.direction = (this.turnLeft(this.direction));}
-      if (this.instruction.charAt(i) === 'R') {this.direction = (this.turnRight(this.direction));}
+      if (this.instruction.charAt(i) === 'L') { this.direction = (this.turnLeft(this.direction));}
+      if (this.instruction.charAt(i) === 'R') { this.direction = (this.turnRight(this.direction));}
       if (this.instruction.charAt(i) === 'F') {
         this.moveForward();
 
@@ -42,7 +42,7 @@ Robot.prototype.move = function () {
 Robot.prototype.turnLeft = function (direction) {
   var currentDir = ["N", "E", "S", "W"].indexOf(direction);
   if(currentDir === 0){currentDir = 4;}
-  return ["N", "E", "S", "W"][currentDir - 1];
+    return ["N", "E", "S", "W"][currentDir - 1];
 };
 
 // turn direction 90 degrees right
