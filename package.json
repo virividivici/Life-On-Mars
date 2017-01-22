@@ -4,8 +4,8 @@
   "description": "Ground control commands to Major Tom",
   "main": "main.js",
   "scripts": {
-    "test": "node_modules\\\\.bin\\\\jasmine-node spec --verbose",
-    "watch": "node_modules\\.bin\\jasmine-node spec --verbose --autotest --watch ."
+    "test": "jasmine-node spec --verbose",
+    "watch": "jasmine-node spec --verbose --autotest --watch ."
   },
   "repository": {
     "type": "git",
